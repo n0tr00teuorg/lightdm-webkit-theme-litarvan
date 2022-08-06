@@ -28,6 +28,6 @@ jobs:
         cache: 'npm'
     - run: ./build.sh
     - uses: actions/upload-artifact@v2
-        with:
-          name: test
-          path: ${{ github.workspace }}/lightdm-webkit-theme-litarvan-$(cat ../version).tar.gz
+      with:
+        name: test
+        path: ${{ github.workspace }}/lightdm-webkit-theme-litarvan-$(cat ../version).tar.gz
